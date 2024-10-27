@@ -23,7 +23,7 @@ return {
                     "rust_analyzer",
                     "clangd",
                     "autotools_ls",
-                    "gopls",
+                    -- "gopls",
                     -- "jdtls",
                     "html",
                     "pylsp",
@@ -55,9 +55,9 @@ return {
             lspconfig.autotools_ls.setup({
                 capabilities = capabilities,
             })
-            lspconfig.gopls.setup({
-                capabilities = capabilities,
-            })
+            -- lspconfig.gopls.setup({
+            --     capabilities = capabilities,
+            -- })
             -- lspconfig.jdtls.setup({
             --     capabilities = capabilities,
             -- })
