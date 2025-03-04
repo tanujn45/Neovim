@@ -24,6 +24,7 @@ return {
                     "clangd",
                     "autotools_ls",
                     "gopls",
+                    "svelte",
                     -- "jdtls",
                     "html",
                     "pylsp",
@@ -56,6 +57,9 @@ return {
                 capabilities = capabilities,
             })
             lspconfig.gopls.setup({
+                capabilities = capabilities,
+            })
+            lspconfig.svelte.setup({
                 capabilities = capabilities,
             })
             -- lspconfig.jdtls.setup({
